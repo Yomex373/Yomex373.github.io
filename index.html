@@ -7,16 +7,23 @@
     <title>Javascript Assignment</title>
 </head>
 <body>
-   <h2>welcome to my page</h2>
+   <h2>make your calculation here</h2>
 
    <script>
-       let name = "Abolarin Peter";
-       let height = 6;
-       let country = "Nigeria";
+       let a = +prompt("Enter your Number here?");
+       let b = +prompt("Enter your Number here?");
+
        
-       console.log("my name is: " + name);
-       console.log("my height is: " + height);
-       console.log("my country is: " + country);
+       if(confirm("Do you want perform addition?") == true){
+        alert(a + b);
+       } else if(confirm("Do you want perform subtraction?") == true){
+           alert(a - b)
+       } else if(confirm("Do you want perform muiltiplication?") == true){
+           alert(a * b)
+       }else{
+           let division = confirm("Do you want perform division?");
+           alert(a / b); 
+       }
    </script>
 </body>
 </html>
